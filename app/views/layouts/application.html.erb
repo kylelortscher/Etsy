@@ -8,9 +8,11 @@
 </head>
 <body>
 <%= render 'layouts/header' %>	
-<%= link_to "About", pages_about_path %>
-<%= link_to "Contact", pages_contact_path %>
-<%= yield %>
+	<%= link_to "About", pages_about_path %>
+	<%= link_to "Contact", pages_contact_path %>
+		<div class="container-fluid">
+			<%= yield %>
+		</div>
 <%= render 'layouts/footer' %>
 </body>
 </html>

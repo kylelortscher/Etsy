@@ -1,7 +1,6 @@
-<table class="table table-striped">  
   <h1>Listing Resturants</h1>
 
-  <table>
+  <table class="table table-striped">
     <thead>
       <tr>
         <th>Name</th>
@@ -17,9 +16,9 @@
           <td><%= listing.name %></td>
           <td><%= listing.description %></td>
           <td><%= listing.price %></td>
-          <td><%= link_to 'Show', listing %></td>
-          <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-          <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Show', listing, class:"btn btn-link" %></td>
+          <td><%= link_to 'Edit', edit_listing_path(listing), class:"btn btn-link" %></td>
+          <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-link" %></td>
         </tr>
       <% end %>
     </tbody>
@@ -28,4 +27,3 @@
   <br>
 
   <%= link_to 'New Listing', new_listing_path %>
-</table>
