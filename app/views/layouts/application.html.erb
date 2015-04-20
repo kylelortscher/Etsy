@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render 'layouts/header' %>	
 <%= link_to "About", pages_about_path %>
 <%= link_to "Contact", pages_contact_path %>
 <%= yield %>
-<p> Copyright Kyle Lortscher </p>
+<%= render 'layouts/footer' %>
 </body>
 </html>
